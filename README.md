@@ -1,9 +1,9 @@
 python-projects
 ===============
 
-Python solutions to https://github.com/karan/Projects
+Python solutions to **<https://github.com/karan/Projects>**
 
-This repo is for learning purposes and just for fun. :smile:
+This repo is mainly for learning purposes and just for fun. :smile:
 
 Below is a list of projects that I've implemented and links to the solutions.
 
