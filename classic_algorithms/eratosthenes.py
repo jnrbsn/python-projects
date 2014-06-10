@@ -39,10 +39,11 @@ def eratosthenes2(n):
     """Generate a list of prime numbers below the specified value.
 
     This one is waaaaay more efficient. It took about 240 milliseconds
-    on my laptop when n = 1 million. Plus it uses some cool Python
-    slicing magic. I tested the equivalent with a loop, and it didn't
-    scale as well. So there's definitely some optimization with the
-    slicing magic. This is also definitely more Pythonic.
+    on my laptop when n = 1 million. I got tired of waiting for the
+    other one to finish. Plus it uses some cool Python slicing magic. I
+    tested the equivalent with a loop, and it didn't scale as well. So
+    there's definitely some optimization with the slicing magic. This is
+    also definitely more Pythonic.
     """
     switches = [True] * n
     primes = []
