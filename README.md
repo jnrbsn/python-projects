@@ -13,3 +13,8 @@ Classic Algorithms
 [**Sieve of Eratosthenes**](https://github.com/jnrbsn/python-projects/blob/master/classic_algorithms/eratosthenes.py)
 – The sieve of Eratosthenes is one of the most efficient ways to find all of the
 smaller primes (below 10 million or so).
+
+[**Collatz Conjecture**](https://github.com/jnrbsn/python-projects/blob/master/classic_algorithms/collatz.py)
+– Start with a number n > 1. Find the number of steps it takes to reach one
+using the following process: If n is even, divide it by 2. If n is odd, multiply
+it by 3 and add 1.
