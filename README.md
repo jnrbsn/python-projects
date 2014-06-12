@@ -18,3 +18,10 @@ it by 3 and add 1.
 [**Sieve of Eratosthenes**](https://github.com/jnrbsn/python-projects/blob/master/classic_algorithms/eratosthenes.py)
 – The sieve of Eratosthenes is one of the most efficient ways to find all of the
 smaller primes (below 10 million or so).
+
+Numbers
+-------
+
+[**Find PI to the Nth Digit**](https://github.com/jnrbsn/python-projects/blob/master/numbers/pi.py)
+– Enter a number and have the program generate PI up to that many decimal
+places. Keep a limit to how far the program will go.
