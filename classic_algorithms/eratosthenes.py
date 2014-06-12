@@ -7,15 +7,15 @@ of the smaller primes (below 10 million or so).
 
 -----
 
->>> eratosthenes1(50)
+>>> eratosthenes(50)
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
->>> eratosthenes2(50)
+>>> eratosthenes_alt(50)
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 
 """
 
 
-def eratosthenes1(n):
+def eratosthenes_alt(n):
     """Generate a list of prime numbers below the specified value.
 
     This was my original idea, but as I started writing it, I realized
@@ -35,7 +35,7 @@ def eratosthenes1(n):
     return numbers
 
 
-def eratosthenes2(n):
+def eratosthenes(n):
     """Generate a list of prime numbers below the specified value.
 
     This one is waaaaay more efficient. It took about 240 milliseconds
