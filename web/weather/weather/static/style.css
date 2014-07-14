@@ -1,0 +1,7 @@
+.container {
+    margin: 40px auto;
+    max-width: 750px;
+}
+h1, form {
+    margin: 0 0 40px;
+}

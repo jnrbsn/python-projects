@@ -25,3 +25,9 @@ Numbers
 [**Find PI to the Nth Digit**](https://github.com/jnrbsn/python-projects/blob/master/numbers/pi.py)
 – Enter a number and have the program generate PI up to that many decimal
 places. Keep a limit to how far the program will go.
+
+Web
+---
+
+[**Fetch Current Weather**](https://github.com/jnrbsn/python-projects/tree/master/web/weather)
+– Get the current weather for a given zip/postal code.

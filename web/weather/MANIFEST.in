@@ -1,0 +1,2 @@
+include weather/static/*
+include weather/templates/*

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Fetch Current Weather</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Current Weather</h1>
+        <form role="form" action="/">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q"
+                    placeholder="e.g. San Francisco, CA or 94107" value="{{ query }}">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </span>
+            </div>
+        </form>
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            <strong>ERROR:</strong> {{ error }}
+        </div>
+        {% endif %}
+        {% if weather_data %}
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>Location</th>
+                    <td>
+                        {{ geo_data.display_name }}<br>
+                        <span class="text-muted">({{ geo_data.lat }}, {{ geo_data.lon }})</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Conditions</th>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{ weather_data.weather[0].icon }}.png" alt="">
+                        <span>{{ weather_data.weather[0].description }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Current Temperature</th>
+                    <td>{{ weather_data.main.temp }} &deg;C</td>
+                </tr>
+                <tr>
+                    <th>Today's Low / High Temperatures</th>
+                    <td>{{ weather_data.main.temp_min }} &deg;C / {{ weather_data.main.temp_max }} &deg;C</td>
+                </tr>
+                <tr>
+                    <th>Humidity</th>
+                    <td>{{ weather_data.main.humidity }}%</td>
+                </tr>
+                <tr>
+                    <th>Pressure</th>
+                    <td>{{ weather_data.main.pressure }} mb</td>
+                </tr>
+                <tr>
+                    <th>Wind Speed / Direction</th>
+                    <td>{{ weather_data.wind.speed }} kph / {{ weather_data.wind.direction }}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>
