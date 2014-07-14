@@ -10,7 +10,7 @@ setup(
     version=__version__,
     description='A web app for fetching the current weather for a given location.',
     long_description=long_description,
-    url='http://www.example.com',
+    url='https://github.com/jnrbsn/python-projects/tree/master/web/weather',
     author='Jonathan Robson',
     author_email='jnrbsn@gmail.com',
     packages=['weather'],
