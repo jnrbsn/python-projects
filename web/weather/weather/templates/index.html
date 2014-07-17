@@ -36,8 +36,11 @@
                 <tr>
                     <th>Conditions</th>
                     <td>
-                        <img src="http://openweathermap.org/img/w/{{ weather_data.weather[0].icon }}.png" alt="">
-                        <span>{{ weather_data.weather[0].description }}</span>
+                    {% for condition in weather_data.weather %}
+                        <img src="http://openweathermap.org/img/w/{{ condition.icon }}.png" alt="">
+                        <span>{{ condition.description }}</span>
+                        {% if not loop.last %}<br>{% endif %}
+                    {% endfor %}
                     </td>
                 </tr>
                 <tr>
