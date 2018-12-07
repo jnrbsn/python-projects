@@ -15,8 +15,8 @@ setup(
     author_email='jnrbsn@gmail.com',
     packages=['weather'],
     install_requires=[
-        'Flask==0.10.1',
-        'requests==2.3.0',
+        'Flask',
+        'requests',
     ],
     include_package_data=True,
     entry_points={
